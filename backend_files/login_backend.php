@@ -8,7 +8,7 @@ if(trim($username) == "" || trim($password) == "" ){
   echo "Please enter a valid username."."<br>";
 
   //sleep(1);
-  $url = "http://localhost/CSE311_Demo_Project_Summer/login.php";
+  $url = "http://localhost/CSE311_Demo_Project_Summer/index.php";
   header("Refresh: 2; URL= $url");
 }
 
@@ -31,7 +31,7 @@ if($login_status == "successful"){
 }
 else{
   echo $login_status;
-  $url = "http://localhost/CSE311_Demo_Project_Summer/login.php";
+  $url = "http://localhost/CSE311_Demo_Project_Summer/index.php";
   header("Refresh: 2; URL= $url");
 }
 
